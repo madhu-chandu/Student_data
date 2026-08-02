@@ -15,7 +15,7 @@ db_url = f"mysql+pymysql://{user}:{password}@{host}:{port}/{database}"
 
 engine = create_engine(db_url)
 
-SessionLocal = sessionmaker(
+session= sessionmaker(
     autocommit=False,
     autoflush=False,
     bind=engine
